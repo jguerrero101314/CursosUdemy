@@ -2,6 +2,7 @@ import React from "react";
 //import Loading from "./components/Loading";
 import ListUsers from "./components/ListUsers";
 import ListUsersV2 from "./components/ListUsersV2";
+import Buttons from "./components/Buttons";
 
 
 export default  function App() {
@@ -10,17 +11,20 @@ export default  function App() {
     //     time: 6
     // };
 
-    const users = [
-        "Joel Guerrero",
-         "Ruth Andino",
-         "Nico Andino"
-        ];
-    const employees = [
-        {name : "Joel Guerrero", years: 22},
-        {name : "Carlos Perez", years: 29},
-        {name : "Raul Ruiz", years: 16},
-        {name : "Ruth Andino", years: 17}
-    ]
+    // const users = [
+    //     "Joel Guerrero",
+    //      "Ruth Andino",
+    //      "Nico Andino"
+    //     ];
+    // const employees = [
+    //     {name : "Joel Guerrero", years: 22},
+    //     {name : "Carlos Perez", years: 29},
+    //     {name : "Raul Ruiz", years: 16},
+    //     {name : "Ruth Andino", years: 17}
+    // ]
+    const showNameConsole = (name) =>{
+        console.log(name);
+    }
     return ( 
     //    <div className="App">
     //        <h1>Mi App</h1>
@@ -34,8 +38,9 @@ export default  function App() {
 
             <div className="App">
                 <h1>Mi App</h1>
-                <ListUsers  ListUsers = {users}/>
-                <ListUsersV2  users = {employees}/>
+                <Buttons fnShowName = {showNameConsole}/>
+                {/* <ListUsers  ListUsers = {users}/>
+                <ListUsersV2  users = {employees}/> */}
             </div>
 
     
