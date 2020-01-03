@@ -1,9 +1,10 @@
-// import React from "react";
+import React from "react";
 
-// export default function Loading() {
-//   return (
-//     <div>
-//       <h2> Cargando...</h2>
-//     </div>
-//   );
-// }
+export default function Loading(props) {
+    const {text} = props;
+    return ( 
+        <div>
+            <h2>{text}</h2>
+        </div>
+    );
+}
