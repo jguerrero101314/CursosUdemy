@@ -1,7 +1,10 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 export default function Car(){
     const[started, setStarted] = useState(false);
+    useEffect(() => {
+        document.title = `Coche ${started}`;
+    }, [started]);
     const[countKm, setCountKm] = useState(0);
     const checkStateCar = () =>{
         if(started){
